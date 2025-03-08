@@ -11,7 +11,7 @@ const App = () => {
 
         if(mediaStream) {
             const videoEl = videoRef.current;
-            video.setAttribute('playsinline', "");
+            videoEl.setAttribute('playsinline', "");
             videoEl.srcObject = mediaStream;
             videoEl.onloadedmetadata = function (e) {
                 videoEl.play();
