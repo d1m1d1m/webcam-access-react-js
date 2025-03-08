@@ -23,7 +23,7 @@ const App = () => {
             <h1>Hello World</h1>
             <button onClick={openCamera}>Open Camera On Mobile</button>
 
-            <video width={500} height={500} ref={videoRef}></video>
+            <video autoPlay muted width={500} height={500} ref={videoRef}></video>
         </>
     );
 };
