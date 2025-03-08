@@ -1,3 +1,4 @@
+import './App.css';
 import { useRef } from "react";
 
 const App = () => {
@@ -21,10 +22,10 @@ const App = () => {
 
     return(
         <>
-            <h1>Hello World</h1>
+            <h1>Activate camera with React JS</h1>
             <button onClick={openCamera}>Open Camera On Mobile</button>
 
-            <video autoPlay muted width={500} height={500} ref={videoRef}></video>
+            <video id="camera" playsInline autoPlay muted ref={videoRef}></video>
         </>
     );
 };
