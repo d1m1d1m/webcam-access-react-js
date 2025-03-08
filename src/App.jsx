@@ -6,7 +6,9 @@ const App = () => {
 
     const openCamera = async () => {
         const constraints = { audio: false, video: {
-            facingMode: "environment"
+            facingMode: "environment",
+            width: 250,
+            height: 250
         } };
         const mediaStream = await navigator.mediaDevices.getUserMedia(constraints);
 
